@@ -10,7 +10,7 @@ function places(country, landmark, activity) {
 }
 
 places.prototype.totalInfo = function() {
-return this.country + ", " + this.landmark + ", " + this.activity;
+return "<li>" + "Country: " + this.country + "</li>" + "<li>" + "Landmark: " + this.landmark + "</li>" + "<li>" + "Activity: " + this.activity + "</li>";
 }
 
 // Place.forEach(function(place) {
@@ -22,15 +22,15 @@ return this.country + ", " + this.landmark + ", " + this.activity;
 
 $(function() {
   $("#portland").click(function() {
-    $("#portlandHidden").text(portland.totalInfo());
+    $("#portlandHidden").html(portland.totalInfo());
     $("#portlandHidden").toggle();
   });
   $("#kyoto").click(function() {
-    $("#kyotoHidden").text(kyoto.totalInfo());
+    $("#kyotoHidden").html(kyoto.totalInfo());
     $("#kyotoHidden").toggle();
   });
   $("#bordeaux").click(function() {
-    $("#bordeauxHidden").text(bordeaux.totalInfo());
+    $("#bordeauxHidden").html(bordeaux.totalInfo());
     $("#bordeauxHidden").toggle();
   });
 });

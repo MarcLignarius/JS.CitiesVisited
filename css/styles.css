@@ -1,3 +1,8 @@
 #portlandHidden, #kyotoHidden, #bordeauxHidden {
   display: none;
 }
+
+img {
+  width: 100px;
+  height: 200px;
+}
