@@ -13,11 +13,6 @@ places.prototype.totalInfo = function() {
 return "<li>" + "Country: " + this.country + "</li>" + "<li>" + "Landmark: " + this.landmark + "</li>" + "<li>" + "Activity: " + this.activity + "</li>";
 }
 
-// Place.forEach(function(place) {
-//   console.log(this.country + this.landmark);
-//   console.log("\n");
-// });
-
 // user interface logic
 
 $(function() {
